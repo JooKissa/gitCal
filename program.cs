@@ -7,13 +7,33 @@ namespace GitCalc
         static void Main(string[] args)
         {
             while(true){
-                Console.WriteLine("Anna 2 numeroa");
+                Console.WriteLine("joo");
                 int num1, num2;
+                String thing1;
                 num1 = Convert.ToInt32(Console.ReadLine());
+                thing1 = Convert.ToString(Console.ReadLine());
                 num2 = Convert.ToInt32(Console.ReadLine());
 
-                int summa = num1 + num2;
-                Console.WriteLine(summa);
+                if (thing1 == "+")
+                {
+                    int summa = num1 + num2;
+                    Console.WriteLine(summa);
+                }
+                else if (thing1 == "-")
+                {
+                    int summa = num1 - num2;
+                    Console.WriteLine(summa);
+                }
+                else if (thing1 == "*")
+                {
+                    int summa = num1 * num2;
+                    Console.WriteLine(summa);
+                }
+                else if (thing1 == "/")
+                {
+                    int summa = num1 / num2;
+                    Console.WriteLine(summa);
+                }
             }
         }
     }
